@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../index.css">
+        <link rel= "stylesheet" href="./logout.css">
+    </head>
+    <body onload="sendtologin()">
+        <div id = "login-fg"> 
+            <form onsubmit="onlogoutclick()" id = "credentials"> 
+                <img src="/assets/green-checkmark.png" alt="You Sucessfully logged in!" id= status-icon>
+                <input id= "logout-button"
+                    type="submit" 
+                    value="LOGOUT" 
+                    onmouseenter="onmousehover()"
+                    onmouseleave="onmouseleft()"
+                    class= "submit-login"
+                    onclick="onLoginClick()"/>
+            </form>
+        </div>
+        <script src= ./logout.js> </script>
+        <script src= ../index.js> </script>
+    </body>
+</html>
